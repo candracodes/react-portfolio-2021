@@ -16,8 +16,8 @@ For this application, I will be taking my existing online portfolio, and making 
 - [License](#Licensing)
 
 ## URLs
-- [Github Repo](#)
-- [Deployed Application](#)
+- [Github Repo](https://github.com/candracodes/react-portfolio-2021)
+- [Deployed Application](https://candracodes.github.io/react-portfolio-2021/)
 
 ## Usage
 - To run this application locally:
