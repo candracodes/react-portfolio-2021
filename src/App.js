@@ -13,6 +13,9 @@ function App() {
       {/* MAIN CONTAINER (start) ================================================= */}
       <div className="ts-page-wrapper" id="page-top">
       <Nav />
+      <Hero />
+      <Main />
+      <Footer />
       </div>
       {/* MAIN CONTAINER (end) ================================================= */}
     </div>
