@@ -1,0 +1,369 @@
+
+/*-------------------------------------------
+  -- Media Queries
+-------------------------------------------*/
+
+@media (min-width: 36rem) and (max-width: 47.9375rem) {
+    html {
+        font-size: 85%;
+    }
+
+    h1, .ts-h1 {
+        font-size: 2.5rem;
+    }
+
+    h2, .ts-h2 {
+        font-size: 1.625rem;
+    }
+
+    h3, .ts-h3 {
+        font-size: 1.25rem;
+    }
+
+    .ts-column-count-sm-1 {
+        column-count: 1;
+    }
+
+    .ts-column-count-sm-2 {
+        column-count: 2;
+    }
+
+    .ts-column-count-sm-3 {
+        column-count: 3;
+    }
+
+    .ts-column-count-sm-4 {
+        column-count: 4;
+    }
+
+    .ts-promo-number figure {
+        font-size: 2.375rem;
+    }
+}
+
+@media (min-width: 48rem) and (max-width: 61.9375rem) {
+    html {
+        font-size: 90%;
+    }
+
+    h1, .ts-h1 {
+        font-size: 3rem;
+    }
+
+    h2, .ts-h2 {
+        font-size: 1.875rem;
+    }
+
+    h3, .ts-h3 {
+        font-size: 1.375rem;
+    }
+
+    .ts-column-count-md-1 {
+        column-count: 1;
+    }
+
+    .ts-column-count-md-2 {
+        column-count: 2;
+    }
+
+    .ts-column-count-md-3 {
+        column-count: 3;
+    }
+
+    .ts-column-count-md-4 {
+        column-count: 4;
+    }
+
+    .ts-promo-number figure {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 62rem) and (max-width: 74.9375rem) {
+    html {
+        font-size: 95%;
+    }
+
+    h1, .ts-h1 {
+        font-size: 3.125rem;
+    }
+
+    h2, .ts-h2 {
+        font-size: 2rem;
+    }
+
+    h3, .ts-h3 {
+        font-size: 1.375rem;
+    }
+
+    .ts-column-count-lg-1 {
+        column-count: 1;
+    }
+
+    .ts-column-count-lg-2 {
+        column-count: 2;
+    }
+
+    .ts-column-count-lg-3 {
+        column-count: 3;
+    }
+
+    .ts-column-count-lg-4 {
+        column-count: 4;
+    }
+
+    .ts-block {
+        padding-bottom: 6.25rem;
+        padding-top: 6.25rem;
+    }
+
+    .ts-card__image {
+        height: 12.5rem;
+    }
+
+    .ts-promo-number figure {
+        font-size: 2.75rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    html {
+        font-size: 100%;
+    }
+
+    h1, .ts-h1 {
+        font-size: 3.5rem;
+    }
+
+    h2, .ts-h2 {
+        font-size: 2.25rem;
+    }
+
+    h3, .ts-h3 {
+        font-size: 1.875rem;
+    }
+
+    .ts-column-count-xl-1 {
+        column-count: 1;
+    }
+
+    .ts-column-count-xl-2 {
+        column-count: 2;
+    }
+
+    .ts-column-count-xl-3 {
+        column-count: 3;
+    }
+
+    .ts-column-count-xl-4 {
+        column-count: 4;
+    }
+
+    .ts-block {
+        padding-bottom: 8.125rem;
+        padding-top: 2rem;
+    }
+
+    .ts-card__image {
+        height: 15.625rem;
+    }
+
+    .navbar.navbar-expand-xl .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar.navbar-expand-xl .navbar-nav .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    .navbar.navbar-expand-xl .ts-background {
+        opacity: 0;
+    }
+
+    .ts-promo-number figure {
+        font-size: 3.75rem;
+    }
+
+    .ts-carousel-centered .owl-nav .owl-next {
+        right: 5rem;
+    }
+
+    .ts-carousel-centered .owl-nav .owl-prev {
+        left: 5rem;
+    }
+
+    .floated form {
+        padding: 2.5rem 5rem;
+    }
+}
+
+@media (max-width: 35.9375rem) {
+    h1, .ts-h1 {
+        margin-bottom: 1.25rem;
+    }
+
+    [class*="ts-column-count-"] {
+        column-count: 1;
+    }
+
+    .ts-xs-text-center {
+        text-align: center !important;
+    }
+
+    .ts-title {
+        margin-bottom: 1.875rem;
+    }
+
+    .ts-promo-number figure {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 36rem) and (max-width: 61.9375rem) {
+    h1, .ts-h1 {
+        margin-bottom: 1.875rem;
+    }
+
+    .ts-title {
+        margin-bottom: 3.125rem;
+    }
+
+    .ts-block-inside {
+        padding: 2.5rem;
+    }
+}
+
+@media (min-width: 62rem) {
+    h1, .ts-h1 {
+        margin-bottom: 2.5rem;
+    }
+
+    .ts-title {
+        margin-bottom: 5rem;
+    }
+
+    .ts-block-inside {
+        padding: 3.75rem;
+    }
+
+    .navbar.navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar.navbar-expand-lg .navbar-nav .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    .navbar.navbar-expand-lg .ts-background {
+        opacity: 0;
+    }
+
+    .floated {
+        position: absolute;
+    }
+}
+
+@media (max-width: 47.9375rem) {
+    h4, .ts-h4 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    h4, .ts-h4 {
+        font-size: 1.5rem;
+    }
+
+    .navbar.navbar-expand-md .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar.navbar-expand-md .navbar-nav .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    .navbar.navbar-expand-md .ts-background {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 61.9375rem) {
+    .ts-card__image {
+        height: 15.625rem;
+    }
+}
+
+@media (min-width: 36rem) {
+    .navbar.navbar-expand-sm .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar.navbar-expand-sm .navbar-nav .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    .navbar.navbar-expand-sm .ts-background {
+        opacity: 0;
+    }
+
+    .ts-carousel-centered .owl-nav .owl-next {
+        right: 2.5rem;
+    }
+
+    .ts-carousel-centered .owl-nav .owl-prev {
+        left: 2.5rem;
+    }
+}
+
+/* MOBILE -- LARGE */
+@media (max-width: 425px) {
+    .ts-background-image {
+        display:none;
+    }
+    .mobile-headshot {
+        visibility: visible;
+        height: 65%;
+    }
+    #portfolio-sections li {
+        float: none;
+    }
+    .phone-mockup {
+        background-color: #eff9fa;
+        height: 100px;
+    }
+    .research-container p {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-0%, 0%);
+    }
+    .research-container h4 {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-0%, 0%);
+    }
+    .videoForMobile {
+        width: 100%;
+    }
+}
+
+/* TABLET -- VERTICAL */
+@media (max-width: 768px) {
+    .ts-background-image {
+        /* background-position: top right; */
+        height: 75%;
+    }
+    .phone-mockup {
+        background-color: #eff9fa;
+        height: 100px;
+    }
+}
