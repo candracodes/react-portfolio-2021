@@ -12,7 +12,6 @@ For this application, I will be taking my existing online portfolio, and making 
 - [Acceptance Criteria](#acceptance-criteria)
 - [Mockup](#mockup)
 - [Packages](#packages)
-- [Contributors](#contributors)
 - [License](#Licensing)
 
 ## URLs
@@ -77,9 +76,6 @@ The project is created using the following frameworks and libraries
 - [jQuery — v3.2.1](https://api.jquery.com/)
 - [Google Fonts - Open Sans](https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap)
 
-
-## Contributors
-* tbd
 
 ## Licensing
 The project is made possible with the following Licensing:
