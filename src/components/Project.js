@@ -118,7 +118,7 @@ export default function Main() {
                     <br />
                     <h5>DayTripper (Private Repo)</h5>
                     <p className="project-link"><a target="_blank" rel="noreferrer" href="https://watch.screencastify.com/v/idbkG3etJkti8xBrmelj">Video Walk-Through</a><br />
-                        <a target="_blank" rel="noreferrer" href="https://w1z9cu.axshare.com/">Wireframe</a><br />
+                        <a target="_blank" rel="noreferrer" href="https://w1z9cu.axshare.com/">Wireframe</a> &amp; <a target="_blank" rel="noreferrer" href="https://github.com/candracodes/daytripper">Repo</a>
                     </p>
                 </div>
                 {/* <!-- PROJECT 2: WEATHER DASHBOARD --> */}
