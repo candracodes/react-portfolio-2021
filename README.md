@@ -22,7 +22,9 @@ For this application, I will be taking my existing online portfolio, and making 
 ## Usage
 - To run this application locally:
 ```
-tbd
+npm run build
+npm run deploy
+npm start
 ```
 
 ## User-Story

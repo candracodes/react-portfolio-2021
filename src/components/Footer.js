@@ -96,7 +96,7 @@ export default function Footer() {
             {/* <!-- DOWNLOAD CV RESUME --> */}
             <div className="col-sm12 col-md-12 col-lg-12">
               <a
-                href="https://drive.google.com/file/d/1nEIVd1f57W02k71bQhO_hl_hrfHNhduQ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1RRoJONK1tHNtkOaTbDs-Kg0Tgqwt0rdT/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="ts-btn-effect mr-2"

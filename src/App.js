@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import Main from './components/Main';
+import Project from './components/Project';
 import Footer from './components/Footer';
 
 
@@ -14,7 +14,7 @@ function App() {
       <div className="ts-page-wrapper" id="page-top">
       <Nav />
       <Hero />
-      <Main />
+      <Project />
       <Footer />
       </div>
       {/* MAIN CONTAINER (end) ================================================= */}
