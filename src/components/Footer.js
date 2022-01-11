@@ -1,5 +1,5 @@
 import React from "react";
-import wall from "./assets/img/bg-man-wall.jpg";
+import wall from "../assets/img/bg-man-wall.jpg";
 
 export default function Footer() {
   return (

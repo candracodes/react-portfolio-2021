@@ -1,9 +1,47 @@
-import React from "react";
-import headshot2 from "./assets/img/headshot2.png";
-import bgKeyboard from "./assets/img/bg-keyboard.jpg"
+import React, { useState } from 'react';
+import headshot2 from "../assets/img/headshot2.png";
+import bgKeyboard from "../assets/img/bg-keyboard.jpg";
 
 
-export default function Main() {
+function Main() {
+
+  // define the project variables here. Default state needs to be empty because I'll have a million projects
+  const [devProjectDetails, setDevProjectDetails] = useState([]);
+  // create an object that will contain all the information for the projects
+
+let devObjects = [
+    {
+        largeimage: "../assets/img/portfolio/img-1-daytripper-big.png",
+        description: "DayTripper",
+        role: "Sr. Dev/Designer",
+        thumbnail: "../assets/img/portfolio/img-1-daytripper.png",
+        altTag: "Car with bags on top driving down road for a road trip",
+        title: "DayTripper (Private Repo)",
+        projectURL: "https://watch.screencastify.com/v/idbkG3etJkti8xBrmelj",
+        githubURL: "https://github.com/candracodes/daytripper",
+    },
+    {
+        largeimage: "../assets/img/portfolio/img-2-weather-big.png",
+        description: "Weather Dashboard",
+        role: "Full Stack Dev/Designer",
+        thumbnail: "../assets/img/portfolio/img-2-weather.png",
+        altTag: "Gray and Blue squares containing today's forecast and the 5 day forecast, with accompanying icons representing clouds, the sun, and the weather of that day.",
+        title: "Weather Dashboard",
+        projectURL: "https://candracodes.github.io/weather-dashboard/",
+        githubURL: "https://github.com/candracodes/weather-dashboard"
+    }
+    // {
+    //     largeimage: "INFO",
+    //     description: "INFO",
+    //     role: "INFO",
+    //     thumbnail: "INFO",
+    //     altTag: "INFO",
+    //     title: "INFO",
+    //     projectURL: "INFO",
+    //     githubURL: "INFO",
+    // },
+]
+
   return (
     <main id="ts-content">
 
@@ -103,50 +141,40 @@ export default function Main() {
                         how I approach development projects, and my coding style.
                     </p>
                 </div>
-                {/* <!-- PROJECT 1: DAYTRIPPER --> */}
-                <div className="ts-gallery col-sm-12 col-md-3">    
-                    <a href="./assets/img/portfolio/img-1-daytripper-big.png"
-                        className="card ts-gallery__item popup-image">
-                        <div className="ts-gallery__item-description">
-                            <h6 className="ts-opacity__50">DayTripper</h6>
-                            <h4>Sr. Dev/Designer</h4>
-                        </div>
-                        <img src="./assets/img/portfolio/img-1-daytripper.png" className="card-img"
-                            alt="Car with bags on top driving down road for a road trip" />
-                        {/* <!--end ts-gallery__image--> */}
-                    </a>
-                    <br />
-                    <h5>DayTripper (Private Repo)</h5>
-                    <p className="project-link"><a target="_blank" rel="noreferrer" href="https://watch.screencastify.com/v/idbkG3etJkti8xBrmelj">Video Walk-Through</a><br />
-                        <a target="_blank" rel="noreferrer" href="https://w1z9cu.axshare.com/">Wireframe</a> &amp; <a target="_blank" rel="noreferrer" href="https://github.com/candracodes/daytripper">Repo</a>
-                    </p>
-                </div>
-                {/* <!-- PROJECT 2: WEATHER DASHBOARD --> */}
-                <div className="ts-gallery col-sm-12 col-md-3">
-                    <a href="./assets/img/portfolio/img-2-weather-big.png" className="card ts-gallery__item popup-image">
-                        <div className="ts-gallery__item-description">
-                            <h6 className="ts-opacity__50">Weather Dashboard</h6>
-                            <h4>Full Stack Dev/Designer</h4>
-                        </div>
-                        <img src="./assets/img/portfolio/img-2-weather.png" className="card-img"
-                            alt="Gray and Blue squares containing today's forecast and the 5 day forecast, with accompanying icons representing clouds, the sun, and the weather of that day." />
-                        {/* <!--end ts-gallery__image--> */}
-                    </a>
-                    <br />
-                    <h5>Weather Dashboard</h5>
-                    <p className="project-link">
-                        <a target="_blank" rel="noreferrer" href="https://candracodes.github.io/weather-dashboard/">URL</a><br />
-                        <a target="_blank" rel="noreferrer" href="https://github.com/candracodes/weather-dashboard">Github</a>
-                    </p>
-                </div>
+
+                {/* <!-- ALL DEVELOPMENT OBJECTS --> */}
+                {devObjects.map((card) => 
+                    <>
+                    <div className="ts-gallery col-sm-12 col-md-3">  
+                        <a href={card.largeimage} className="card ts-gallery__item popup-image">
+                            <div className="ts-gallery__item-description">
+                                <h6 className="ts-opacity__50">{card.description}</h6>
+                                <h4>{card.role}</h4>
+                            </div>
+                            <img src={card.thumbnail} className="card-img"
+                                alt={card.altTag} />
+                        </a>
+                        <br />
+                        <h5>{card.title}</h5>
+                        <p className="project-link">
+                            <a target="_blank" rel="noreferrer" href={card.projectURL}>Project URL</a><br />
+                            <a target="_blank" rel="noreferrer" href={card.githubURL}>Github Repo</a>
+                        </p>
+                    </div>
+                    </>
+                )}
+                
+                
+
+                
                 {/* <!-- PROJECT 3: WORKDAY SCHEDULER --> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
-                    <a href="./assets/img/portfolio/img-3-workday-big.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-3-workday-big.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Workday Scheduler</h6>
                             <h4>Full Stack Developer</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-3-workday.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-3-workday.png" className="card-img"
                             alt="A flat planner with gray blocks indicating time in the past, red blocks indicating time in the present, and green blocks representing blocks in the future." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -159,12 +187,12 @@ export default function Main() {
                 </div>
                 {/* <!-- PROJECT 4: CODE QUIZ --> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
-                    <a href="./assets/img/portfolio/img-5-codeQuiz-big.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-5-codeQuiz-big.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Code Quiz</h6>
                             <h4>Full Stack Developer</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-5-codeQuiz.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-5-codeQuiz.png" className="card-img"
                             alt="Beige background, with a header saying Javascript Code Quiz. 4 statements describing the timed nature of the quiz, followed by a blue button that says start." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -177,13 +205,13 @@ export default function Main() {
                 </div>
                 {/* <!-- PROJECT 5: CANDRACODES 2019 --> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
-                    <a href="./assets/img/portfolio/img-5-3-candracodes-big.png"
+                    <a href="../assets/img/portfolio/img-5-3-candracodes-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Portfolio 2019</h6>
                             <h4>Full Stack Dev/Designer</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-5-3-candracodes.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-5-3-candracodes.png" className="card-img"
                             alt="Beige background, with a header saying Javascript Code Quiz. 4 statements describing the timed nature of the quiz, followed by a blue button that says start." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -196,13 +224,13 @@ export default function Main() {
                 </div>
                 {/* <!-- PROJECT 6: ADHQ--> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
-                    <a href="./assets/img/portfolio/img-5-2-ADHQ-big.png"
+                    <a href="../assets/img/portfolio/img-5-2-ADHQ-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Affiliated Distributors</h6>
                             <h4>Web Developer/Designer</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-5-2-ADHQ.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-5-2-ADHQ.png" className="card-img"
                             alt="Beige background, with a header saying Javascript Code Quiz. 4 statements describing the timed nature of the quiz, followed by a blue button that says start." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -215,14 +243,14 @@ export default function Main() {
                 {/* <!-- PROJECT 7: ONLYPANS --> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
                     {/* <!-- LARGE IMAGE --> */}
-                    <a href="./assets/img/portfolio/img-dev-7-onlypans-big.png"
+                    <a href="../assets/img/portfolio/img-dev-7-onlypans-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">OnlyPans</h6>
                             <h4>Full Stack Developer/Designer</h4>
                         </div>
                         {/* <!-- THUMBNAIL --> */}
-                        <img src="./assets/img/portfolio/img-dev-7-onlypans-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-dev-7-onlypans-thumb.png" className="card-img"
                             alt="Dark gray header with navigation options, large photo of a Thanksgiving spread where a large turkey is the centerpiece." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -236,14 +264,14 @@ export default function Main() {
                 {/* <!-- PROJECT 8: TEAM PROFILE GENERATOR --> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
                     {/* <!-- LARGE IMAGE --> */}
-                    <a href="./assets/img/portfolio/img-dev-8-teamprofile-big.png"
+                    <a href="../assets/img/portfolio/img-dev-8-teamprofile-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Profile Generator</h6>
                             <h4>Full Stack Developer/Designer</h4>
                         </div>
                         {/* <!-- THUMBNAIL --> */}
-                        <img src="./assets/img/portfolio/img-dev-8-teamprofile-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-dev-8-teamprofile-thumb.png" className="card-img"
                             alt="Dark gray header with navigation options, large photo of a Thanksgiving spread where a large turkey is the centerpiece." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -257,14 +285,14 @@ export default function Main() {
                 {/* <!-- PROJECT 9: NOTE TAKER APP --> */}
                 <div className="ts-gallery col-sm-12 col-md-3">
                     {/* <!-- LARGE IMAGE --> */}
-                    <a href="./assets/img/portfolio/img-dev-9-notetaker-big.png"
+                    <a href="../assets/img/portfolio/img-dev-9-notetaker-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Note Taker App</h6>
                             <h4>Full Stack Developer</h4>
                         </div>
                         {/* <!-- THUMBNAIL --> */}
-                        <img src="./assets/img/portfolio/img-dev-9-notetaker-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-dev-9-notetaker-thumb.png" className="card-img"
                             alt="Pretty basic image of a green navigation header with simple notes in the center, alongside a sidebar with previously entered note titles." />
                         {/* <!--end ts-gallery__image--> */}
                     </a>
@@ -293,42 +321,42 @@ export default function Main() {
                 {/* <!-- start: card-columns (4) --> */}
                 <div className="card-columns ts-gallery ts-column-count-4">
                     {/* <!-- THE FLAMING SKILLET --> */}
-                    <a href="./assets/img/portfolio/img-19-print-big.png"
+                    <a href="../assets/img/portfolio/img-19-print-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">The Flaming Skillet</h6>
                             <h4>Logo Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-19-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-19-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- GREG'S RANDOM ACTS --> */}
-                    <a href="./assets/img/portfolio/img-20-print-big.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-20-print-big.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Greg's Random Acts</h6>
                             <h4>Logo Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-20-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-20-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- LEFT HANDED CAKES --> */}
-                    <a href="./assets/img/portfolio/img-21-print-big.png"
+                    <a href="../assets/img/portfolio/img-21-print-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Left Handed Cakes</h6>
                             <h4>Logo Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-21-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-21-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- COMCAST UTM --> */}
-                    <a href="./assets/img/portfolio/img-22-print-big.png"
+                    <a href="../assets/img/portfolio/img-22-print-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Comcast UTM</h6>
                             <h4>Logo Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-22-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-22-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
 
@@ -338,43 +366,43 @@ export default function Main() {
                 {/* <!-- start: card-columns (3) --> */}
                 <div className="card-columns ts-gallery ts-column-count-4">
                     {/* <!-- SOLD BY SH'RON --> */}
-                    <a href="./assets/img/portfolio/img-23-print-big.png"
+                    <a href="../assets/img/portfolio/img-23-print-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Sold By Sh'Ron</h6>
                             <h4>Logo + Billboard Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-23-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-23-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- GEODECISIONS TRADESHOW BANNER --> */}
-                    <a href="./assets/img/portfolio/img-24-print-big.png"
+                    <a href="../assets/img/portfolio/img-24-print-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">GeoDecisions</h6>
                             <h4>Tradeshow Banner</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-24-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-24-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- COMCAST NEWSLETTER --> */}
-                    <a href="./assets/img/portfolio/img-25-print-big.png"
+                    <a href="../assets/img/portfolio/img-25-print-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Comcast</h6>
                             <h4>Newsletter Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-25-print-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-25-print-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- DAYTRION CD --> */}
-                    <a href="./assets/img/portfolio/img-27-mixed-big.png"
+                    <a href="../assets/img/portfolio/img-27-mixed-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Daytrion</h6>
                             <h4>CD Cover Design</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-27-mixed-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-27-mixed-thumb.png" className="card-img"
                             alt="description" />
                     </a>
 
@@ -398,29 +426,29 @@ export default function Main() {
                 {/* <!-- start: card-columns --> */}
                 <div className="card-columns ts-gallery ts-column-count-4">
                     {/* <!-- CICELY TYSON --> */}
-                    <a href="./assets/img/portfolio/img-10-cicely.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-10-cicely.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Cicely Tyson</h6>
                             <h4>Pencil Drawing</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-10-cicely.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-10-cicely.png" className="card-img"
                             alt="Actress Cicely Tyson drawn with graphite pencil onto beige canvas paper." />
                     </a>
                     {/* <!-- BOOTSY COLLINS --> */}
-                    <a href="./assets/img/portfolio/img-11-bootsy.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-11-bootsy.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Bootsy Collins</h6>
                                 <h4>Pencil Drawing</h4>
                             </div>
-                            <img src="./assets/img/portfolio/img-11-bootsy.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-11-bootsy.png" className="card-img"
                                 alt="A colored pencil drawing of singer and bassist Bootsy Collins" />
                         </div>
                     </a>
                     {/* <!-- ERYKAH BADU --> */}
-                    <a href="./assets/img/portfolio/img-12-erykah.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-12-erykah.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
-                            <img src="./assets/img/portfolio/img-12-erykah.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-12-erykah.png" className="card-img"
                                 alt="A colored pencil drawing of singer, Erykah Badu." />
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Erykah Badu</h6>
@@ -429,9 +457,9 @@ export default function Main() {
                         </div>
                     </a>
                     {/* <!-- ANDRE 3000 --> */}
-                    <a href="./assets/img/portfolio/img-13-andre.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-13-andre.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
-                            <img src="./assets/img/portfolio/img-13-andre.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-13-andre.png" className="card-img"
                                 alt="A red and warm colored digital drawing of rapper/actor Andre 3000." />
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Andre 3000</h6>
@@ -440,10 +468,10 @@ export default function Main() {
                         </div>
                     </a>
                     {/* <!-- MUHAMMED ALI --> */}
-                    <a href="./assets/img/portfolio/img-14-muhammed.png"
+                    <a href="../assets/img/portfolio/img-14-muhammed.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
-                            <img src="./assets/img/portfolio/img-14-muhammed.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-14-muhammed.png" className="card-img"
                                 alt="Black and white charcoal and graphite drawing of Muhammed Ali standing in a boxing ring over the top of Sonny Liston" />
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Muhammed Ali</h6>
@@ -452,9 +480,9 @@ export default function Main() {
                         </div>
                     </a>
                     {/* <!-- SILVER SHADOW --> */}
-                    <a href="./assets/img/portfolio/img-15-silver.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-15-silver.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
-                            <img src="./assets/img/portfolio/img-15-silver.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-15-silver.png" className="card-img"
                                 alt="A comic book styled digital drawing of a super hero woman against an intergalactic background." />
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Silver Shadow</h6>
@@ -463,9 +491,9 @@ export default function Main() {
                         </div>
                     </a>
                     {/* <!-- THE FRIEDS --> */}
-                    <a href="./assets/img/portfolio/img-17-fried.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-17-fried.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
-                            <img src="./assets/img/portfolio/img-17-fried.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-17-fried.png" className="card-img"
                                 alt="An oil painting of a man, woman, and their dog." />
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Tom and Mary</h6>
@@ -474,9 +502,9 @@ export default function Main() {
                         </div>
                     </a>
                     {/* <!-- CANDRA --> */}
-                    <a href="./assets/img/portfolio/img-18-candra.png" className="card ts-gallery__item popup-image">
+                    <a href="../assets/img/portfolio/img-18-candra.png" className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__image">
-                            <img src="./assets/img/portfolio/img-18-candra.png" className="card-img"
+                            <img src="../assets/img/portfolio/img-18-candra.png" className="card-img"
                                 alt="A black and white pencil drawing of Candra sitting in a window sill looking outward" />
                             <div className="ts-gallery__item-description">
                                 <h6 className="ts-opacity__50">Self Portrait</h6>
@@ -485,34 +513,34 @@ export default function Main() {
                         </div>
                     </a>
                     {/* <!-- JIMI HENDRIX GUITAR --> */}
-                    <a href="./assets/img/portfolio/img-26-mixed-big.png"
+                    <a href="../assets/img/portfolio/img-26-mixed-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Jimi Hendrix/Fender</h6>
                             <h4>Custom Guitar Woodwork</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-26-mixed-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-26-mixed-thumb.png" className="card-img"
                             alt="description" />
                     </a>
 
                     {/* <!-- DAVID BOWIE STICKER --> */}
-                    <a href="./assets/img/portfolio/img-28-mixed-big.png"
+                    <a href="../assets/img/portfolio/img-28-mixed-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">David Bowie</h6>
                             <h4>Digital Drawing/Sticker</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-28-mixed-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-28-mixed-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                     {/* <!-- FREDDIE MERCURY STICKER --> */}
-                    <a href="./assets/img/portfolio/img-29-mixed-big.png"
+                    <a href="../assets/img/portfolio/img-29-mixed-big.png"
                         className="card ts-gallery__item popup-image">
                         <div className="ts-gallery__item-description">
                             <h6 className="ts-opacity__50">Freddie Mercury</h6>
                             <h4>Digital Drawing/Sticker</h4>
                         </div>
-                        <img src="./assets/img/portfolio/img-29-mixed-thumb.png" className="card-img"
+                        <img src="../assets/img/portfolio/img-29-mixed-thumb.png" className="card-img"
                             alt="description" />
                     </a>
                 </div>
@@ -602,3 +630,5 @@ export default function Main() {
     
   );
 }
+
+export default Main;

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./assets/img/logo.png"; //importing logo the React method
+import logo from "../assets/img/logo.png"; //importing logo the React method
 
 export default function Nav() {
   return (

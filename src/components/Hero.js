@@ -1,6 +1,6 @@
 import React from "react";
-import headshot from "./assets/img/headshot1.png";
-import bgHero from "./assets/img/bg-hero.jpg";
+import headshot from "../assets/img/headshot1.png";
+import bgHero from "../assets/img/bg-hero.jpg";
 
 export default function Hero() {
   return (

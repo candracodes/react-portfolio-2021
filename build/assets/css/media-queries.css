@@ -332,6 +332,9 @@
         visibility: visible;
         height: 65%;
     }
+    .mobile-headshot img{
+        width: 100%;
+    }
     #portfolio-sections li {
         float: none;
     }
