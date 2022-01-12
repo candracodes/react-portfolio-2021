@@ -1,3 +1,4 @@
+// TODO: NOTE TO CANDRA: The only way to display the images both on github pages AS WELL as locally is to take the name of the github pages HOMEPAGE, i.e. react-portfolio-2021, and reference the image THAT way instead of ../assets
 import React, { useState } from "react";
 import headshot2 from "../assets/img/headshot2.png";
 import bgKeyboard from "../assets/img/bg-keyboard.jpg";
@@ -6,8 +7,7 @@ function Main() {
   // define the project variables here. Default state needs to be empty because I'll have a million projects
   const [devProjectDetails, setDevProjectDetails] = useState([]);
 
-  // src={process.env.PUBLIC_URL + '/img/logo.png'}
-  // {process.env.PUBLIC_URL + '/assets/img/portfolio/img-1-daytripper-big.png'}
+  
   
   // CREATE DEVELOPMENT PROJECT OBJECT TO CONTAIN ALL PROJECT DETAILS
   let devObjects = [
@@ -22,10 +22,10 @@ function Main() {
       githubURL: "https://github.com/candracodes/daytripper"
     },
     {
-      largeimage: "../assets/img/portfolio/img-2-weather-big.png",
+      largeimage: "/react-portfolio-2021/assets/img/portfolio/img-2-weather-big.png",
       description: "Weather Dashboard",
       role: "Full Stack Dev/Designer",
-      thumbnail: "../assets/img/portfolio/img-2-weather.png",
+      thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-2-weather.png",
       altTag:
         "Gray and Blue squares containing today's forecast and the 5 day forecast, with accompanying icons representing clouds, the sun, and the weather of that day.",
       title: "Weather Dashboard",
@@ -33,70 +33,70 @@ function Main() {
       githubURL: "https://github.com/candracodes/weather-dashboard"
     },
     {
-        largeimage: "../assets/img/portfolio/img-3-workday-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-3-workday-big.png",
         description: "Workday Scheduler",
         role: "Full Stack Developer",
-        thumbnail: "../assets/img/portfolio/img-3-workday.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-3-workday.png",
         altTag: "A flat planner with gray blocks indicating time in the past, red blocks indicating time in the present, and green blocks representing blocks in the future.",
         title: "Workday Scheduler",
         projectURL: "https://candracodes.github.io/work-day-scheduler/",
         githubURL: "https://github.com/candracodes/work-day-scheduler"
     },
     {
-        largeimage: "../assets/img/portfolio/img-5-codeQuiz-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-5-codeQuiz-big.png",
         description: "Code Quiz",
         role: "Full Stack Developer",
-        thumbnail: "../assets/img/portfolio/img-5-codeQuiz.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-5-codeQuiz.png",
         altTag: "Beige background, with a header saying Javascript Code Quiz. 4 statements describing the timed nature of the quiz, followed by a blue button that says start.",
         title: "Code Quiz",
         projectURL: "https://candracodes.github.io/code-quiz/",
         githubURL: "https://github.com/candracodes/code-quiz"
     },
     {
-        largeimage: "../assets/img/portfolio/img-5-3-candracodes-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-5-3-candracodes-big.png",
         description: "Portfolio 2019",
         role: "Full Stack Dev/Designer",
-        thumbnail: "../assets/img/portfolio/img-5-3-candracodes.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-5-3-candracodes.png",
         altTag: "Beige background, with a header saying Javascript Code Quiz. 4 statements describing the timed nature of the quiz, followed by a blue button that says start.",
         title: "My 2019 Online Portfolio",
         projectURL: "https://candracodes.github.io/cfried-portfolio-2019/",
         githubURL: "https://github.com/candracodes/cfried-portfolio-2019"
     },
     {
-        largeimage: "../assets/img/portfolio/img-5-2-ADHQ-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-5-2-ADHQ-big.png",
         description: "Affiliated Distributors",
         role: "Web Developer/Designer",
-        thumbnail: "../assets/img/portfolio/img-5-2-ADHQ.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-5-2-ADHQ.png",
         altTag: "Beige background, with a header saying Javascript Code Quiz. 4 statements describing the timed nature of the quiz, followed by a blue button that says start.",
         title: "Affiliated Distributors HQ",
         projectURL: "https://adhq.com/",
         githubURL: ""
     },
     {
-        largeimage: "../assets/img/portfolio/img-dev-7-onlypans-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-dev-7-onlypans-big.png",
         description: "OnlyPans",
         role: "Full Stack Developer/Designer",
-        thumbnail: "../assets/img/portfolio/img-dev-7-onlypans-thumb.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-dev-7-onlypans-thumb.png",
         altTag: "Dark gray header with navigation options, large photo of a Thanksgiving spread where a large turkey is the centerpiece.",
         title: "OnlyPans — Recipes",
         projectURL: "https://onlypans-group-3.herokuapp.com/",
         githubURL: "https://github.com/candracodes/only-pans"
     },
     {
-        largeimage: "../assets/img/portfolio/img-dev-8-teamprofile-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-dev-8-teamprofile-big.png",
         description: "Profile Generator",
         role: "Full Stack Developer/Designer",
-        thumbnail: "../assets/img/portfolio/img-dev-8-teamprofile-thumb.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-dev-8-teamprofile-thumb.png",
         altTag: "Dark gray header with navigation options, large photo of a Thanksgiving spread where a large turkey is the centerpiece.",
         title: "Team Profile Generator",
         projectURL: "https://candracodes.github.io/team-profile-generator/dist/index.html",
         githubURL: "https://github.com/candracodes/team-profile-generator"
     },
     {
-        largeimage: "../assets/img/portfolio/img-dev-9-notetaker-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-dev-9-notetaker-big.png",
         description: "Note Taker App",
         role: "Full Stack Developer",
-        thumbnail: "../assets/img/portfolio/img-dev-9-notetaker-thumb.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-dev-9-notetaker-thumb.png",
         altTag: "Pretty basic image of a green navigation header with simple notes in the center, alongside a sidebar with previously entered note titles.",
         title: "Note Taker App",
         projectURL: "https://candra-note-taker.herokuapp.com/",
@@ -106,59 +106,59 @@ function Main() {
 
   // CREATE PRINT PROJECT OBJECT TO CONTAIN ALL PROJECT DETAILS
   let printObjects = [{
-          largeimage: "../assets/img/portfolio/img-19-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-19-print-big.png",
           client: "The Flaming Skillet",
           medium: "Logo Design",
-          thumbnail: "../assets/img/portfolio/img-19-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-19-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-20-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-20-print-big.png",
           client: "Greg's Random Acts",
           medium: "Logo Design",
-          thumbnail: "../assets/img/portfolio/img-20-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-20-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-21-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-21-print-big.png",
           client: "Left Handed Cakes",
           medium: "Logo Design",
-          thumbnail: "../assets/img/portfolio/img-21-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-21-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-22-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-22-print-big.png",
           client: "Comcast UTM",
           medium: "Logo Design",
-          thumbnail: "../assets/img/portfolio/img-22-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-22-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-23-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-23-print-big.png",
           client: "Sold By Sh'Ron",
           medium: "Logo + Billboard Design",
-          thumbnail: "../assets/img/portfolio/img-23-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-23-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-24-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-24-print-big.png",
           client: "GeoDecisions",
           medium: "Tradeshow Banner",
-          thumbnail: "../assets/img/portfolio/img-24-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-24-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-25-print-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-25-print-big.png",
           client: "Comcast",
           medium: "Newsletter Design",
-          thumbnail: "../assets/img/portfolio/img-25-print-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-25-print-thumb.png",
           altTag: "description"
       },
       {
-          largeimage: "../assets/img/portfolio/img-27-mixed-big.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-27-mixed-big.png",
           client: "Daytrion",
           medium: "CD Cover Design",
-          thumbnail: "../assets/img/portfolio/img-27-mixed-thumb.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-27-mixed-thumb.png",
           altTag: "description"
       }
   ];
@@ -166,80 +166,80 @@ function Main() {
   // CREATE PRINT PROJECT OBJECT TO CONTAIN ALL PROJECT DETAILS
   let artObjects = [
       {
-          largeimage: "../assets/img/portfolio/img-10-cicely.png",
+          largeimage: "/react-portfolio-2021/assets/img/portfolio/img-10-cicely.png",
           client: "Cicely Tyson",
           medium: "Pencil Drawing",
-          thumbnail: "../assets/img/portfolio/img-10-cicely.png",
+          thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-10-cicely.png",
           altTag: "Actress Cicely Tyson drawn with graphite pencil onto beige canvas paper."
       },
       {
-        largeimage: "../assets/img/portfolio/img-11-bootsy.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-11-bootsy.png",
         client: "Bootsy Collins",
         medium: "Pencil Drawing",
-        thumbnail: "../assets/img/portfolio/img-11-bootsy.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-11-bootsy.png",
         altTag: "A colored pencil drawing of singer and bassist Bootsy Collins"
     },
     {
-        largeimage: "../assets/img/portfolio/img-12-erykah.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-12-erykah.png",
         client: "Erykah Badu",
         medium: "Colored Pencil",
-        thumbnail: "../assets/img/portfolio/img-12-erykah.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-12-erykah.png",
         altTag: "A colored pencil drawing of singer, Erykah Badu"
     },    
     {
-        largeimage: "../assets/img/portfolio/img-13-andre.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-13-andre.png",
         client: "Andre 3000",
         medium: "Digital Drawing/Procreate",
-        thumbnail: "../assets/img/portfolio/img-13-andre.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-13-andre.png",
         altTag: "A red and warm colored digital drawing of rapper/actor Andre 3000."
     },
     {
-        largeimage: "../assets/img/portfolio/img-14-muhammed.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-14-muhammed.png",
         client: "Muhammed Ali",
         medium: "Charcoal/Pencil Drawing",
-        thumbnail: "../assets/img/portfolio/img-14-muhammed.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-14-muhammed.png",
         altTag: "Black and white charcoal and graphite drawing of Muhammed Ali standing in a boxing ring over the top of Sonny Liston"
     },
     {
-        largeimage: "../assets/img/portfolio/img-15-silver.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-15-silver.png",
         client: "Silver Shadow",
         medium: "Comic Drawing/Procreate",
-        thumbnail: "../assets/img/portfolio/img-15-silver.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-15-silver.png",
         altTag: "A comic book styled digital drawing of a super hero woman against an intergalactic background."
     },
     {
-        largeimage: "../assets/img/portfolio/img-17-fried.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-17-fried.png",
         client: "Tom and Mary",
         medium: "Oil Painting",
-        thumbnail: "../assets/img/portfolio/img-17-fried.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-17-fried.png",
         altTag: "An oil painting of a man, woman, and their dog."
     },
     {
-        largeimage: "../assets/img/portfolio/img-18-candra.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-18-candra.png",
         client: "Self Portrait",
         medium: "Pencil Drawing",
-        thumbnail: "../assets/img/portfolio/img-18-candra.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-18-candra.png",
         altTag: "A black and white pencil drawing of Candra sitting in a window sill looking outward"
     },
     {
-        largeimage: "../assets/img/portfolio/img-26-mixed-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-26-mixed-big.png",
         client: "Jimi Hendrix/Fender",
         medium: "Custom Guitar Woodwork",
-        thumbnail: "../assets/img/portfolio/img-26-mixed-thumb.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-26-mixed-thumb.png",
         altTag: "Woodened detailed electric guitar with a painting of Jimi Hendrix woodburned into the guitar body"
     },
     {
-        largeimage: "../assets/img/portfolio/img-28-mixed-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-28-mixed-big.png",
         client: "David Bowie",
         medium: "Digital Drawing/Sticker",
-        thumbnail: "../assets/img/portfolio/img-28-mixed-thumb.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-28-mixed-thumb.png",
         altTag: "Vibrant colored David Bowie sticker with orange lightening bolt"
     },
     {
-        largeimage: "../assets/img/portfolio/img-29-mixed-big.png",
+        largeimage: "/react-portfolio-2021/assets/img/portfolio/img-29-mixed-big.png",
         client: "Freddie Mercury",
         medium: "Digital Drawing/Sticker",
-        thumbnail: "../assets/img/portfolio/img-29-mixed-thumb.png",
+        thumbnail: "/react-portfolio-2021/assets/img/portfolio/img-29-mixed-thumb.png",
         altTag: "Circular, blue colored drawing of a sticker with Queen lead singer, Freddie Mercury holding a microphone and leaning backwards"
     }
 ];
