@@ -5,14 +5,17 @@ import bgKeyboard from "../assets/img/bg-keyboard.jpg";
 function Main() {
   // define the project variables here. Default state needs to be empty because I'll have a million projects
   const [devProjectDetails, setDevProjectDetails] = useState([]);
+
+  // src={process.env.PUBLIC_URL + '/img/logo.png'}
+  // {process.env.PUBLIC_URL + '/assets/img/portfolio/img-1-daytripper-big.png'}
   
   // CREATE DEVELOPMENT PROJECT OBJECT TO CONTAIN ALL PROJECT DETAILS
   let devObjects = [
     {
-      largeimage: "../../assets/img/portfolio/img-1-daytripper-big.png",
+      largeimage: "/assets/img/portfolio/img-1-daytripper-big.png",
       description: "DayTripper",
       role: "Sr. Dev/Designer",
-      thumbnail: "../../assets/img/portfolio/img-1-daytripper.png",
+      thumbnail: "/assets/img/portfolio/img-1-daytripper.png",
       altTag: "Car with bags on top driving down road for a road trip",
       title: "DayTripper (Private Repo)",
       projectURL: "https://watch.screencastify.com/v/idbkG3etJkti8xBrmelj",
