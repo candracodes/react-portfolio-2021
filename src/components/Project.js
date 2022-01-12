@@ -12,10 +12,10 @@ function Main() {
   // CREATE DEVELOPMENT PROJECT OBJECT TO CONTAIN ALL PROJECT DETAILS
   let devObjects = [
     {
-      largeimage: "/assets/img/portfolio/img-1-daytripper-big.PNG",
+      largeimage: "/assets/img/portfolio/img-1-daytripper-big.png",
       description: "DayTripper",
       role: "Sr. Dev/Designer",
-      thumbnail: "/assets/img/portfolio/img-1-daytripper.PNG",
+      thumbnail: "/assets/img/portfolio/img-1-daytripper.png",
       altTag: "Car with bags on top driving down road for a road trip",
       title: "DayTripper (Private Repo)",
       projectURL: "https://watch.screencastify.com/v/idbkG3etJkti8xBrmelj",
