@@ -300,11 +300,11 @@ function Main() {
               </dl>
               <hr className="ts-hr-light mb-5" />
               <a href="#contact" className="ts-btn-effect mr-2">
-                <span className="ts-visible btn btn-primary ts-btn-arrow">
+                <span className="ts-visible btn btn-primary">
                   Contact Me
                 </span>
                 <span
-                  className="ts-hidden btn btn-primary ts-btn-arrow"
+                  className="ts-hidden btn btn-primary"
                   data-bg-color="#d44729"
                 >
                   Contact Me
@@ -463,12 +463,12 @@ function Main() {
       </section>
       {/* <!-- END: PORTFOLIO ***********************************************************************************--> */}
 
-      {/* <!-- START: MY SKILLS ***********************************************************************************--> */}
-      <section id="my-skills" className="ts-block pb-5">
+      {/* <!-- START: RESUME ***********************************************************************************--> */}
+      <section id="resume" className="ts-block pb-5">
         <div className="container">
           <hr className="ts-hr-light" />
           <div className="ts-title portfolio-title">
-            <h2>My Skills</h2>
+            <h2>Resume</h2>
           </div>
           {/* <!--end ts-title--> */}
           <hr className="ts-hr-light" />
@@ -480,8 +480,20 @@ function Main() {
                 proficient in the full Adobe Creative Suite, HTML 5, CSS,
                 Javascript and several other frameworks/libraries.
               </p>
-              <a href="#contact" className="btn btn-outline-light mb-5">
-                Contact Me
+              <a
+                href="https://drive.google.com/file/d/1RRoJONK1tHNtkOaTbDs-Kg0Tgqwt0rdT/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                className="ts-btn-effect mr-2"
+              >
+                <span className="ts-visible btn btn-outline-light">
+                  <i className="fa fa-download small mr-2"></i>
+                  Download CV
+                </span>
+                <span className="ts-hidden btn btn-light bg-white">
+                  <i className="fa fa-download small mr-2"></i>
+                  Download CV
+                </span>
               </a>
             </div>
             {/* <!--end col-md-6--> */}
@@ -565,7 +577,7 @@ function Main() {
         </div>
         {/* <!--end container--> */}
       </section>
-      {/* <!-- END: MY SKILLS ***********************************************************************************--> */}
+      {/* <!-- END: RESUME ***********************************************************************************--> */}
     </main>
   );
 }

@@ -38,8 +38,8 @@ export default function Nav() {
             <a className="nav-item nav-link ts-scroll" href="#portfolio">
               Portfolio
             </a>
-            <a className="nav-item nav-link ts-scroll" href="#my-skills">
-              Skills
+            <a className="nav-item nav-link ts-scroll" href="#resume">
+              Resume
             </a>
             <a className="nav-item nav-link ts-scroll" href="#contact">
               Contact
