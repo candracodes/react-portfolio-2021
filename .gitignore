@@ -1,5 +1,5 @@
 # Get rid of build folder on main branch
-# build/
+build/
 
 #.DS_store
 .DS_store
