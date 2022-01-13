@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Project from './components/Project';
+import Form from './components/Form';
 import Footer from './components/Footer';
 
 
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <Hero />
       <Project />
+      <Form />
       <Footer />
       </div>
       {/* MAIN CONTAINER (end) ================================================= */}
