@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Project from './components/Project';
