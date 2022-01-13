@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div className="row ts-xs-text-center ">
             {/* <!-- start: ICON 1 --> */}
-            <div className="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp">
+            <div className="col-sm-6 col-md-3 mb-4">
               <i
                 className="fas fa-map-marker-alt mb-4 footer-icon"
                 alt="Pink icon of a map pin, indicating the location of Candra Fried"
@@ -31,8 +31,6 @@ export default function Footer() {
             {/* <!-- start: ICON 2 --> */}
             <div
               className="col-sm-6 col-md-3 mb-4"
-              data-animate="ts-fadeInUp"
-              data-delay=".2s"
             >
               <i
                 className="fas fa-envelope-open mb-4 footer-icon"
@@ -49,8 +47,6 @@ export default function Footer() {
             {/* <!-- start: ICON 3 --> */}
             <div
               className="col-sm-6 col-md-3 mb-4"
-              data-animate="ts-fadeInUp"
-              data-delay=".2s"
             >
               <i
                 className="fab fa-linkedin mb-4 footer-icon"
@@ -74,8 +70,6 @@ export default function Footer() {
             {/* <!-- start: ICON 4 --> */}
             <div
               className="col-sm-6 col-md-3 mb-4"
-              data-animate="ts-fadeInUp"
-              data-delay=".2s"
             >
               <i
                 className="fab fa-github mb-4 footer-icon"
