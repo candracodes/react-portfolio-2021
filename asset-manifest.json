@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio-2021/static/css/main.9d5615cc.css",
-    "main.js": "/react-portfolio-2021/static/js/main.9dc36f72.js",
+    "main.js": "/react-portfolio-2021/static/js/main.d37cdafc.js",
     "static/js/787.e2aa2c30.chunk.js": "/react-portfolio-2021/static/js/787.e2aa2c30.chunk.js",
     "static/media/fa-solid-900.svg": "/react-portfolio-2021/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/react-portfolio-2021/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
@@ -25,11 +25,11 @@
     "index.html": "/react-portfolio-2021/index.html",
     "static/media/loading.svg": "/react-portfolio-2021/static/media/loading.582bc01dd3f785647d6d.svg",
     "main.9d5615cc.css.map": "/react-portfolio-2021/static/css/main.9d5615cc.css.map",
-    "main.9dc36f72.js.map": "/react-portfolio-2021/static/js/main.9dc36f72.js.map",
+    "main.d37cdafc.js.map": "/react-portfolio-2021/static/js/main.d37cdafc.js.map",
     "787.e2aa2c30.chunk.js.map": "/react-portfolio-2021/static/js/787.e2aa2c30.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d5615cc.css",
-    "static/js/main.9dc36f72.js"
+    "static/js/main.d37cdafc.js"
   ]
 }
