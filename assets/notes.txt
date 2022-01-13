@@ -1,6 +1,6 @@
-————————————————————————
+————————————————————————————————————————————————————————————
 To remove build folder:
-————————————
+————————————————————————————————————————————————————————————
 
 package.json
 ————————————
@@ -14,24 +14,23 @@ package.json
     "eject": "react-scripts eject"
   },
 
-
+————————————
 .gitignore
 ————————————
 # Get rid of build folder on main branch
-# build/
+build/
 
 
-————————————————————————
+————————————————————————————————————————————————————————————
 If in the event the changes made locally are not reflected on gh-pages, 
 Do the following:
-————————————
+————————————————————————————————————————————————————————————
 
 package.json
 ————————————
 "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "clean-cache": " rm -rf ./node_modules/.cache/gh-pages/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,12 +38,12 @@ package.json
   },
 
 ————————————
-
 .gitignore
 ————————————
 # Get rid of build folder on main branch
-build/
+# build/
 
+————————————
 Root Directory
 ————————————
 Delete build folder
