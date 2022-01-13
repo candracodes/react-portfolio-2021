@@ -13,7 +13,6 @@ import 'owl.carousel/dist/assets/owl.carousel.min.css'; // owl carousel
 import './App.css'; // I took all of my original custom styles from style.css and pasted it into this location. Otherwise the styles compete
 
 // === IMPORT JS PACKAGES ===
-// import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js'; 
 import 'imagesloaded/imagesloaded.pkgd.min.js';
